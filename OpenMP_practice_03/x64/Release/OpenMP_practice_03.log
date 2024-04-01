@@ -1,0 +1,14 @@
+﻿  practice3.cpp
+C:\Users\Ataraxia\source\repos\OpenMP_practice\TinyLogger\TinyLogger.h(30,70): warning C4244: 'return': '_Rep'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Ataraxia\source\repos\OpenMP_practice\TinyLogger\TinyLogger.h(54,48): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\OpenMP_practice_03\Histogram.h(24,17): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  2 of 470 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  OpenMP_practice_03.vcxproj -> C:\Users\Ataraxia\source\repos\OpenMP_practice\x64\Release\OpenMP_practice_03.exe
