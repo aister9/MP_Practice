@@ -38,6 +38,9 @@ namespace TinyLogger{
 
 		void print();
 		friend std::ostream& operator<<(std::ostream& os, const Logger& data);
+		std::vector<std::variant<int, double, std::string>>& operator[](std::string key) {
+			return data[key];
+		}
 	};
 
 	void Logger::print() {

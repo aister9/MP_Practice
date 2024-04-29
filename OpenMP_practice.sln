@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenMP_practice_02", "OpenM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenMP_practice_03", "OpenMP_practice_03\OpenMP_practice_03.vcxproj", "{3DE705C6-4052-4181-8394-F6C0FA0DD0D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CUDA_practice_01", "CUDA_practice_01\CUDA_practice_01.vcxproj", "{D563F5D5-00D2-468A-A395-5931C96A1647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{3DE705C6-4052-4181-8394-F6C0FA0DD0D5}.Release|x64.Build.0 = Release|x64
 		{3DE705C6-4052-4181-8394-F6C0FA0DD0D5}.Release|x86.ActiveCfg = Release|Win32
 		{3DE705C6-4052-4181-8394-F6C0FA0DD0D5}.Release|x86.Build.0 = Release|Win32
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Debug|x64.ActiveCfg = Debug|x64
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Debug|x64.Build.0 = Debug|x64
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Debug|x86.ActiveCfg = Debug|Win32
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Debug|x86.Build.0 = Debug|Win32
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Release|x64.ActiveCfg = Release|x64
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Release|x64.Build.0 = Release|x64
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Release|x86.ActiveCfg = Release|Win32
+		{D563F5D5-00D2-468A-A395-5931C96A1647}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
