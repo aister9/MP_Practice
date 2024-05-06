@@ -1,6 +1,6 @@
-﻿  Compiling CUDA source file matAdd.cu...
+﻿  Compiling CUDA source file matMul.cu...
   
-  C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -IC:\Users\Ataraxia\source\repos\OpenMP_practice\TinyLogger -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"     --keep-dir x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static --std c++17   -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc142.pdb" -o C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\x64\Release\matAdd.cu.obj "C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu" 
+  C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -IC:\Users\Ataraxia\source\repos\OpenMP_practice\TinyLogger -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"D:\vcpkg\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"     --keep-dir x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static --std c++17   -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc142.pdb" -o C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\x64\Release\matMul.cu.obj "C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu" 
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
@@ -72,13 +72,17 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_ap
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\cuda_runtime_api.h(11766): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(832): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(6975): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(15300): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(18916): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/include\cuda.h(21758): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-  matAdd.cu
-  tmpxft_00008e90_00000000-7_matAdd.cudafe1.cpp
+  matMul.cu
+  tmpxft_0001000c_00000000-7_matMul.cudafe1.cpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include\driver_types.h(1325): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
@@ -88,16 +92,17 @@ C:/Users/Ataraxia/source/repos/OpenMP_practice/TinyLogger\TinyLogger.h(30): warn
               _Rep=__int64
           ]
 C:/Users/Ataraxia/source/repos/OpenMP_practice/TinyLogger\TinyLogger.h(57): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu(41): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu(41): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu(41): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu(41): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_01\matAdd.cu(41): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     C:\Users\Ataraxia\source\repos\OpenMP_practice\x64\Release\CUDA_practice_01.lib 라이브러리 및 C:\Users\Ataraxia\source\repos\OpenMP_practice\x64\Release\CUDA_practice_01.exp 개체를 생성하고 있습니다.
-LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Ataraxia\source\repos\OpenMP_practice\CUDA_practice_02\matMul.cu(98): warning C4244: '인수': 'float'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다.
-  0 of 41 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  0 of 43 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
-  CUDA_practice_01.vcxproj -> C:\Users\Ataraxia\source\repos\OpenMP_practice\x64\Release\CUDA_practice_01.exe
+  CUDA_practice_02.vcxproj -> C:\Users\Ataraxia\source\repos\OpenMP_practice\x64\Release\CUDA_practice_02.exe
+  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+  배치 파일이 아닙니다.
